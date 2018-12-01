@@ -124,15 +124,26 @@ namespace UI
                 startInfo.Arguments = arguments;
                 startInfo.CreateNoWindow = false;
                 startInfo.UseShellExecute = true;
+                
                 startInfo.WorkingDirectory = parsePath[0];
 
                 var process = Process.Start(startInfo);
                 process.WaitForInputIdle();
                 var handle = process.MainWindowHandle;
 
+                process.EnableRaisingEvents = true;
+                process.Exited += (origin, eventArgs) => {
+                    selection.WindowHandle = IntPtr.Zero ;
+                };
+
                 selection.WindowHandle = handle;
             }
         }
+
+        //private void ProcessExited(object sender, System.EventArgs e)
+        //{
+        //    Console.WriteLine("Exited");
+        //}
 
         private string[] ParseFilePath(string command)
         {
