@@ -21,6 +21,8 @@ This Application was made to solve that problem.  Paired with MQ2AutoLogin, each
 
 * Names are sorted alphabetically.  I use a naming scheme of "{group #} - {class}" to organize the list.
 
+* There's a 5 second delay between each process when you "Start All".
+
 * Unique names aren't enforced, but are recommended.  You may experience problems saving/deleting on items sharing the same name.
 
 * You need to start the program through the application.  It won't detect pre-existing windows or windows opened in other methods.
