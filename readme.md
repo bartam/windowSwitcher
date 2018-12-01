@@ -1,8 +1,11 @@
 # Window Switcher
 Name and switch between defined windows.  Originally built to help multibox EQEMU.  Selecting a name in the list will open that window and minimize the rest.
 
+## ALPHA RELEASE
+This is an alpha release.  The functionality is rough and bugs are likely.  If you experience bugs or have an idea for an improvement, please create an issue.
 
-![alt text](/docs/images/WindowSwitch.JPG)
+
+![Screenshot](/docs/images/WindowSwitch.JPG)
 
 ## Features
 
