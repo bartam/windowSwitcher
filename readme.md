@@ -1,5 +1,5 @@
 # Window Switcher
-Name and switch between defined windows.  Originally built to help multibox EQEMU.
+Name and switch between defined windows.  Originally built to help multibox EQEMU.  Selecting a name in the list will open that window and minimize the rest.
 
 
 ![alt text](/docs/images/WindowSwitch.JPG)
@@ -9,7 +9,14 @@ Name and switch between defined windows.  Originally built to help multibox EQEM
 * Create names for windows
 * Start individual or all windows.
 
+## Motivation
+Multiboxing 12+ accounts on EQEMU is hard.  As each windows is named the same, I had no easy way to locate and switch to a specific account.  Every time I'd need to loot something, it would be 30 seconds of Alt+Tab until the right account came up.  
+
+This Application was made to solve that problem.  Paired with MQ2AutoLogin, each account is started through the application and I navigate to the correct account by selecting it in the list.
+
 ## Notes
+
+* Names are sorted alphabetically.  I use a naming scheme of "{group #} - {class}" to organize the list.
 
 * Unique names aren't enforced, but are recommended.  You may experience problems saving/deleting on items sharing the same name.
 
