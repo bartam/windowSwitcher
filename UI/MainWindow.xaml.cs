@@ -91,7 +91,7 @@ namespace UI
                 //To minimize the period of time where there's no window active
                 //Lets Maximize the selected window first, then minimize the rest
 
-                ShowWindow.restore(selection.WindowHandle);
+                ShowWindow.maximize(selection.WindowHandle);
 
                 var list = this.ProcessListView.Items;
                 foreach (Proc item in list) {
@@ -113,7 +113,7 @@ namespace UI
         private void StartProcessButton_Click(object sender, RoutedEventArgs e)
         {
             var selection = (Proc)this.ProcessListView.SelectedItem;
-            if( selection.WindowHandle != System.IntPtr.Zero ) {
+            if( selection.WindowHandle == System.IntPtr.Zero ) {
                 var split = selection.Command.Split();
 
                 var parsePath = ParseFilePath(split[0]);
